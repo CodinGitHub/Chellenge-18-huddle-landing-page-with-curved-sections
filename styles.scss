@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,700&family=Poppins:wght@700&display=swap');
+
+$Pink: hsl(322, 100%, 66%);
+$LightPink: hsl(321, 100%, 78%);
+$LightRed: hsl(0, 100%, 63%);
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Very-Pale-Blue: hsl(207, 100%, 98%);
+$Body-font: 'Open Sans', sans-serif;
+$Headings-font: 'Poppins', sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $Very-Pale-Blue;
+    font-family: $Body-font;
+    color: $Very-Dark-Cyan;
+}
+
+.main-container {
+    width: 375px;
+    border: 1px solid black;
+    margin: 25px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 95px;
+    height: 16px
+}
+
+.header__button {
+    width: 80px;
+    height: 24px;
+    background-color: $Very-Pale-Blue;
+    border: none;
+    border: 1px solid $LightPink;
+    color: $LightPink;
+    border-radius: 50px;
+    margin-bottom: 125px;
+}
+
+.main-container__title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 265px;
+    margin: 0 auto 36px;
+    font-size: 1.48em;
+}
+
+.main-container__description {
+
+    text-align: center;
+    width: 290px;
+    margin: 0 auto 49px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.main-container__button {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: $Pink;
+    color: $Very-Pale-Blue;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto 104px;
+}
+
+.main-container__screen-mockups {
+    display: block;
+    width: 300px;
+    margin: 0 auto 138px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comunities {
+    margin-bottom: 98px;
+
+    &__logo {
+        width: 32px;
+    }
+
+    &__statistics {
+        font-size: 4em;
+    }
+
+    &__description {
+        font-size: 0.8em;
+    }
+}
+
+.messages {
+    margin-bottom: 197px;
+    &__logo {
+        width: 24px;
+    }
+    &__statistics {
+        font-size: 4em;
+        font-weight: 700;
+    }
+    &__description {
+        font-size: 0.8em;
+        margin: auto;
+        width: 69px;
+        text-align: center;
+    }
+}
+.grow-together {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 245px;
+    .image-container {
+        &__illustration {
+            width: 246px;
+            margin-bottom: 78px;
+        }
+    }
+    .description {
+        &__title {
+            font-family: $Headings-font;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        &__content {
+            text-align: center;
+            font-size: 0.9em;
+            width: 330px;
+        }
+    }
+}
+.flowing-conversations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 245px;
+    .image-container {
+        &__illustration {
+            width: 246px;
+            margin-bottom: 78px;
+        }
+    }
+    .description {
+        &__title {
+            font-family: $Headings-font;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        &__content {
+            text-align: center;
+            font-size: 0.9em;
+            width: 330px;
+        }
+    }
+}
+.your-users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 245px;
+    .image-container {
+        &__illustration {
+            width: 246px;
+            margin-bottom: 78px;
+        }
+    }
+    .description {
+        &__title {
+            font-family: $Headings-font;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 12px;
+        }
+        &__content {
+            text-align: center;
+            font-size: 0.9em;
+            width: 330px;
+        }
+    }
+}
+.main-container__footer-wave{
+    margin-bottom: -5px;
+    width: 100%;
+}
+.newsletter{
+    background-color: $Very-Dark-Cyan;
+    color: $Very-Pale-Blue;
+    &__title{
+        text-transform: uppercase;
+        font-size: 1.2em;
+    }
+}
