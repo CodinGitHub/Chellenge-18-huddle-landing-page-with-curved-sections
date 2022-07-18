@@ -6,10 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
   <link rel="stylesheet" href="./styles.css">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://kit.fontawesome.com/003962264f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <main class="main-container">
@@ -76,23 +73,34 @@
 
 
     <footer class="newsletter">
-      <h2 class="newsletter__title">Newsletter</h2>
-      <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
-      <form action="">
-        <input type="text">
-        <input type="submit" value="Subscribe"> 
-      </form>
-      <img src="./images/logo.svg" alt="">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
-      <div class="phone-container">
-        <img src="./images/icon-phone.svg" alt="">
-        <p>Phone: +1-543-123-4567</p>
-      </div>
-      <div class="email-container">
-        <img src="./images/icon-email.svg" alt="">
-        <p>example@huddle.com</p>
-      </div>
-      <div class="social-container"></div>
+      <section>
+        <h2 class="newsletter__title">Newsletter</h2>
+        <p class="newsletter__description">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
+        <form class="newsletter__form" action="">
+          <input class="newsletter__input" type="text">
+          <div class="newsletter__submit-container">
+            <input class="newsletter__submit" type="submit" value="Subscribe"> 
+          </div>
+        </form>
+      </section>
+      
+      <section>
+        <img class="newsletter__logo-huddle" src="./images/logo-white.svg" alt="">
+        <p class="newsletter__huddle-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+        <div class="newsletter__phone-container">
+          <img src="./images/icon-phone.svg" alt="">
+          <a class="newsletter__anchor">Phone: +1-543-123-4567</a>
+        </div>
+        <div class="newsletter__email-container">
+          <img src="./images/icon-email.svg" alt="">
+          <a class="newsletter__anchor">example@huddle.com</a>
+        </div>
+        <div class="newsletter__social-container">
+          <i class="newsletter__social-icon --fa-primary-color fa-brands fa-facebook-square fa-xl" width="30"></i>
+          <i class="newsletter__social-icon fa-brands fa-instagram fa-xl"></i>
+          <i class="newsletter__social-icon fa-brands fa-twitter-square fa-xl"></i>
+        </div>
+      </section>
     </footer>
   </main>
   <aside>
