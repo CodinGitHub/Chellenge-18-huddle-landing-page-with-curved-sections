@@ -1,7 +1,7 @@
 @use 'variables';
 
 @mixin desktop-view($width, $height: unset, $fontSize: unset) {
-    @media screen and(min-width: 1440px) {
+    @media (min-width: 1440px) {
         width: $width;
         height: $height;
         font-size: $fontSize;
@@ -9,9 +9,10 @@
 };
 
 
-@mixin active-states($color) {
+@mixin button-hover($bg-color) {
     &:hover {
-        background-color: $color;
+        background-color: $bg-color;
+        color: variables.$white;
         cursor: pointer;
     }
 };
@@ -105,7 +106,7 @@
     }
 };
 
-@mixin button($bg-color, $br-color, $font-color, $width, $height) {
+@mixin button($bg-color, $br-color, $font-color, $width, $height, $center) {
     background-color: $bg-color;
     border: none;
     border: 1px solid $br-color;
@@ -115,7 +116,9 @@
     display: block;
     width: $width;
     height: $height;
-    margin: 0 auto 100px;
+    @if $center == true{
+        margin: 0 auto;
+    } 
 };
 
 @mixin statistics($logo) {
